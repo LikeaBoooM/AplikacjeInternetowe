@@ -1,0 +1,83 @@
+
+{% extends "layout.html" %}
+{% block content %}
+<div class="pass1">
+Co-ordinates</div>
+
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active content-section">
+      <img class="d-block w-100" src="{{url_for('static', filename='location.png')}} " alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="{{url_for('static', filename='location1.png')}} " alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="{{url_for('static', filename='location3.png')}} " alt="Third slide">
+    </div>
+  </div>
+</div>
+<div class="pass">
+  <div class="first">NORTH</div>
+  <div class="second">SOUTH</h4></div>
+  <div class="thirth">EAST</div>
+  <div class="fourth">WEST</div>
+</div>
+
+<div class="card-deck">
+  <div class="card">
+    <img class="card-img-top mx-auto" src="{{url_for('static', filename='cards1.png')}}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Latitude</h5>
+      <p class="card-text">In geography, latitude is a geographic coordinate that specifies the north–south position of a point on the Earth's surface.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Done by Mateusz Borkowski</small>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top mx-auto" src="{{url_for('static', filename='cards2.png')}}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Longitude</h5>
+      <p class="card-text">Longitude is a geographic coordinate that specifies the east–west position of a point on the Earth's surface, or the surface of a celestial body.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Done by Mateusz Borkowski</small>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top mx-auto" src="{{url_for('static', filename='cards3.png')}}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Elevation</h5>
+      <p class="card-text">The elevation of a geographic location is its height above or below a fixed reference point, most commonly a reference geoid.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Done by Mateusz Borkowski</small>
+    </div>
+  </div>
+</div>
+<div class="pass1">
+About me ! </div>
+<div class="shape-outer pentagon mx-auto">
+	<div class="shape-inner pentagon">
+    <img class="card-img mx-auto" src="{{url_for('static', filename='zdjecie.jpg')}}" />
+  </div>
+</div>
+<div class="card text-center">
+  <div class="card-header">
+    Information
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Student | UNIVERSITY OF RZESZÓW </h5>
+    <p class="card-text">Hi, I'm Mathew. I'm studying computer programming.I spend a lot of time in front of computer.</p>
+  </div>
+  <div class="card-footer text-muted">
+    Done by Mateusz Borkowski
+  </div>
+</div>
+<footer class="page-footer font-small blue">
+<div class="footer-copyright text-center py-3">© 2018 Copyright:
+    <a href="https://facebook.com/borkos44"> Borkowski</a>
+  </div>
+</footer>
+{% endblock content %}
